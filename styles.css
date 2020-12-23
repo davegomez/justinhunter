@@ -1,0 +1,352 @@
+:root {
+    /* Colors */
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+    --font-color-primary: rgb(30, 30, 30);
+    --font-color-accent: rgb(105, 105, 105);
+    --font-color-secondary: rgb(150, 21, 29);
+    --bg-color-primary: rgb(150, 21, 29);
+    --bg-color-secondary:rgb(242, 242, 242);
+    --bg-color-accent: rgb(229, 229, 229);
+    /* Fonts (Base 16px - Scale 1.125 - Major Second */
+    --font-size-h1: 1.802rem;
+    --font-size-h2: 1.424rem;
+    --font-size-h3: 1.266rem;
+    --font-size-h4: 1rem;
+    --font-size-h5: 0.889rem;
+    --font-size-h6: 0.79rem;
+    /* Margin and Padding Sizes */
+    --mp-0: 0;
+    --mp-1: 0.25rem;
+    --mp-2: 0.5rem;
+    --mp-3: 0.75rem;
+    --mp-4: 1rem;
+    --mp-5: 1.25rem;
+    --mp-6: 1.5rem;
+    --mp-8: 2rem;
+    --mp-10: 2.5rem;
+    --mp-12: 3rem;
+    --mp-16: 4rem;
+    --mp-20: 5rem;
+    --mp-24: 6rem;
+    --mp-32: 8rem;
+    --mp-40: 10rem;
+    --mp-48: 12rem;
+    --mp-56: 14rem;
+    --mp-64: 16rem;
+    --mp-auto: auto;
+    --mp-px: 1px;
+    --neg-mp-1: -0.25rem;
+    --neg-mp-2: -0.5rem;
+    --neg-mp-3: -0.75rem;
+    --neg-mp-4: -1rem;
+    --neg-mp-5: -1.25rem;
+    --neg-mp-6: -1.5rem;
+    --neg-mp-8: -2rem;
+    --neg-mp-10: -2.5rem;
+    --neg-mp-12: -3rem;
+    --neg-mp-16: -4rem;
+    --neg-mp-20: -5rem;
+    --neg-mp-24: -6rem;
+    --neg-mp-32: -8rem;
+    --neg-mp-40: -10rem;
+    --neg-mp-48: -12rem;
+    --neg-mp-56: -14rem;
+    --neg-mp-64: -16rem;
+    --neg-mp-px: -1px;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color-primary);
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-size: var(--font-size-h4);
+    margin: 0 auto;
+    max-width: 80rem;
+}
+
+header {
+    color: var(--white);
+    padding: var(--mp-4);
+}
+
+main {
+    background-color: var(--white);
+    margin-bottom: var(--mp-10);
+    padding: var(--mp-4);
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+    margin-top: var(--mp-2);
+}
+
+h4 {
+    font-size: var(--font-size-h4);
+}
+
+h5 {
+    font-size: var(--font-size-h5);
+}
+
+h6 {
+    font-size: var(--font-size-h6);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: var(--mp-1);
+    margin-top: var(--mp-1);
+}
+
+ul {
+    list-style: none;
+    padding-left: var(--mp-3);
+}
+
+li {
+    margin-bottom: var(--mp-2);
+}
+
+li:before {
+    background-image: url(/images/arrow-right-solid.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    display: inline-block;
+    height: var(--mp-3);
+    margin-right: var(--mp-1);   
+    width: var(--mp-3);
+}
+
+li ul {
+    margin-top: var(--mp-2);
+    padding-left: var(--mp-4);
+}
+
+li ul li:before {
+    background-image: url(/images/circle-solid.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    display: inline-block;
+    height: var(--mp-1);
+    margin-right: var(--mp-2);
+    vertical-align: middle;
+    width: var(--mp-1);
+}
+
+.position {
+    font-weight: 600;
+}
+
+.profile-picture {
+    margin-top: var(--mp-2);
+    text-align: center;
+}
+
+.career-positions {
+    margin-top: var(--mp-4);
+}
+
+.secondary-title {
+    color: var(--font-color-secondary);
+    font-weight: 500;
+    margin-bottom: var(--mp-4);
+    margin-top: var(--mp-4);
+}
+
+.previous-position {
+    margin-bottom: var(--mp-4);
+}
+
+.previous-position-title {
+    margin-bottom: var(--mp-2);
+}
+
+.about,
+.accomplishments,
+.community {
+    margin-top: var(--mp-6);
+}
+
+.about-box {
+    background-color: var(--bg-color-accent);
+    padding: var(--mp-4);
+}
+
+.about-box h3:first-child {
+    margin-top: var(--mp-0);
+}
+
+h4.secondary-title {
+    margin-bottom: var(--mp-1);
+}
+
+.about-box .secondary-title:not(:first-child) {
+    margin-top: var(--mp-4);
+}
+
+.community img {
+    width: 100%;
+}
+
+/* --md => @media (min-width: 768px) */
+@media screen and (min-width: 48em) {
+    header {
+        align-items: baseline;
+        display: flex;
+    }
+
+    h2 {
+        margin-top: var(--mp-0);
+        margin-left: var(--mp-4);
+    }
+    
+    .previous {
+        display: flex;
+    }
+    
+    .current {
+        border-top: 2px solid var(--bg-color-primary);
+        display: flex;
+        justify-content: space-around;
+        margin-top: var(--mp-4);
+        padding-top: var(--mp-4);
+    }
+    
+    .profile-picture {
+        margin-top: initial;
+    }
+
+    .profile-picture img {
+        height: 160px;
+        margin-top: initial;
+        text-align: initial;
+        width: 160px;
+    }
+
+    .career-description {
+        margin-left: var(--mp-4);
+    }
+
+    .career-positions {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .previous-position {
+        margin-bottom: initial;
+        padding: var(--mp-2);
+        width: 50%;
+    }
+
+    .previous-position:nth-child(even) {
+        border-left: 1px solid var(--bg-color-primary);
+    }
+
+    .previous-position:nth-child(odd) {
+        border-right: 1px solid var(--bg-color-primary);
+    }
+
+    .previous-position:nth-child(-n+2) {
+        border-bottom: 1px solid var(--bg-color-primary);
+    }
+
+    .previous-position:nth-child(n+3) {
+        border-top: 1px solid var(--bg-color-primary);
+    }
+
+    .career-positions {
+        margin-top: initial;
+    }
+
+    .secondary-title {
+        margin-top: initial;
+    }
+
+    .community {
+        margin-left: var(--mp-6);
+    }
+}
+
+/* --lg => @media (min-width: 1024px) */
+@media screen and (min-width: 64em) {
+    .profile-picture img {
+        height: 157px;
+        width: 157px;
+    }
+    
+    .career-positions {
+        display: flex;
+        flex-flow: initial;
+    }
+
+    .previous-position {
+        width: 25%;
+    }
+
+    .previous-position:nth-child(even) {
+        border-left: 2px solid var(--bg-color-primary);
+    }
+
+    .previous-position:nth-child(odd) {
+        border-left: 2px solid var(--bg-color-primary);
+        border-right: initial;
+    }
+
+    .previous-position:nth-child(-n+2) {
+        border-bottom: initial;
+    }
+
+    .previous-position:nth-child(n+3) {
+        border-top: initial;
+    }
+
+    .about {
+        display: flex;
+    }
+
+    .about-box {
+        width: calc(100% / 3)
+    }
+
+    .about-box:not(:last-child) {
+        margin-right: var(--mp-4);
+    }
+
+    .additional-information {
+        display: flex;
+    }
+
+    .accomplishments {
+        width: 79%;
+    }
+}
